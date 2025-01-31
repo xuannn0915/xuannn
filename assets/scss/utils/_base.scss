@@ -8,6 +8,10 @@ body{
   font-family: Montserrat, Noto Sans TC;
 }
 
+section{
+  padding: 144px 0;
+}
+
 
 img{
   width: 100%;
@@ -18,6 +22,7 @@ ul,ol,li,p{
   list-style: none;
   margin: 0;
   padding: 0;
+  letter-spacing: 0.05rem;
 }
 
 

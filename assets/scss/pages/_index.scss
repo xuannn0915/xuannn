@@ -1,4 +1,6 @@
 .introduction {
+  padding: 0;
+
   .banner {
     padding: 88px 0 24px 0;
 
@@ -54,16 +56,16 @@
   }
 
   @media (max-width: 990px) {
-    .banner{
+    .banner {
       h1 {
         font-size: 48px;
         margin-top: -8px;
       }
     }
-    .info{
+    .info {
       padding: 64px 0 64px 0;
-      
-      .avatar{
+
+      .avatar {
         border-radius: 15px;
         height: 240px;
         object-fit: cover;
@@ -72,15 +74,132 @@
   }
 }
 
-.project{
-  padding: 144px 0;
-
-  .title{
-    margin-bottom: 40px;
+.project {
+  .project-list {
+    margin: 40px 0;
   }
 
-  .card{
+  .list-item {
+    &:nth-child(1) {
+      .card-content {
+        background: linear-gradient(
+          95deg,
+          #415a90 22.69%,
+          rgba(65, 90, 144, 0.2) 100%
+        );
+        height: 100%;
+      }
+    }
+    &:nth-child(2) {
+      .card-content {
+        background: linear-gradient(
+          95deg,
+          #234a4a 22.69%,
+          rgba(35, 74, 74, 0.2) 100%
+        );
+        height: 100%;
+      }
+    }
+    &:nth-child(3) {
+      .card-content {
+        background: linear-gradient(
+          95deg,
+          #fee3c5 22.69%,
+          rgba(254, 227, 197, 0.2) 100%
+        );
+        height: 100%;
+      }
+    }
+    &:nth-child(4) {
+      .card-content {
+        background: linear-gradient(
+          95deg,
+          #666666 22.69%,
+          rgba(102, 102, 102, 0.2) 100%
+        );
+        height: 100%;
+      }
+    }
+  }
+
+  .card {
+    border: 1px solid #000;
     border-radius: 15px;
+    height: 300px;
     border: 0;
+
+    &-title {
+      font-size: 32px;
+    }
+
+    p {
+      font-family: Noto Sans TC;
+    }
+
+    img {
+      height: 100%;
+      object-fit: cover;
+      transition: all 0.5s ease-in-out;
+    }
+
+    &:hover {
+      img {
+        transition: all 0.5s ease-in-out;
+        transform: scale(1.1);
+      }
+    }
+  }
+
+  @media (max-width: 768px) {
+    .project-list {
+      margin: 0;
+    }
+
+    .card-title {
+      font-size: 24px;
+    }
+  }
+}
+
+.side-project {
+  background-color: #fafafa;
+
+  .side-project-list {
+    margin: 40px 0 64px 0;
+  }
+
+  .card {
+    height: 300px;
+    border: 0;
+    border-radius: 15px;
+    img{
+      transform: scale(1.2);
+      object-fit: cover;
+    }
+  }
+
+  .cube {
+    padding-bottom: 16px;
+  }
+
+  .card-center {
+    background: #fafafa;
+  }
+
+  .arrow-right {
+    width: 24px;
+  }
+
+  .arrow-hover {
+    opacity: 0%;
+  }
+
+  .btn:hover {
+    .arrow {
+      opacity: 0%;
+    }
+    .arrow-hover {
+      opacity: 100%;
+    }
   }
 }
