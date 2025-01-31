@@ -5,20 +5,86 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <%- include('./layout/head'); -%>
-
   </head>
   <body>
     <%- include('./layout/header'); -%>
 
-    <h1 class="index-title">我是首頁</h1>
-    <img src="../assets/images/cat.jpg" style="width: 300px;" alt="cat">
+    <!-- Introduction -->
+    <section class="introduction">
+      <div class="banner bg-dark">
+        <div class="container">
+          <div class="row position-relative">
+            <div class="col-lg-7">
+              <h2 class="fs-2 text-light">UIUX Designer</h2>
+              <h1 class="fw-bold text-light mb-4">TZU HSUAN CHEN</h1>
+              <div class="moto text-light d-md-flex justify-content-between align-items-center">
+                <p class="fs-lg-5 fs-6">The best designs feel effortless, like a conversation with a friend.</p>
+                <span class="fs-2">#</span>
+              </div>
+            </div>
+            <div class="col-lg-5 d-lg-block d-none">
+              <div class="avatar-box rounded-pill overflow-hidden">
+                <img src="../assets/images/avatar.jpg" alt="avatar">
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="info">
+        <div class="container">
+          <div class="row flex-lg-row flex-column-reverse justify-content-between">
+            <div class="col-lg-7">
+              <p class="mb-4">
+                我是子瑄，<br>
+                畢業於台師大設計系產品組，於醫美公司從事UIUX設計師已有三年的經歷。主導超過10種不同類型專案，涵蓋品牌官網、活動網站、後台系統等類別，擅長電商平台、RWD響應式網頁與後台管理系統介面設計。
+              </p>
+              <p>
+                具備基礎前端開發能力，持續精進網頁開發技術。現正專研 Webflow 等 no-code 工具，致力拓展跨域專業，以提供更全方位的專案開發解決方案。
+              </p>
+              <div class="scroll_down">
+                <p class="text-primary fw-bold mb-3">SCROLL</p>
+                <img src="../assets/images/scroll down.svg" alt="scroll down arrow" class="arrow">
+              </div>
+            </div>
+            <div class="col-lg-4 d-lg-none d-block">
+                <img src="../assets/images/avatar.jpg" alt="avatar" class="mb-lg-0 mb-4 avatar">
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+
+    <!-- Project -->
+     <section class="project">
+      <div class="container">
+        <div class="title text-center">
+          <div class="fs-lg-4 text-primary">PROJECTS</div>
+          <div class="fs-2 fw-bold text-dark">專案作品</div>
+        </div>
+        <div class="row justify-content-center">
+          <div class="col-5">
+            <div class="card bd position-relative">
+              <div class="text-light">123123</div>
+              <div class="text-light">123123</div>
+              <img src="../assets/images/Home/超預防首頁.jpg" alt="" class="position-absolute top-0 start-0">
+            </div>
+          </div>
+          <div class="col-5">
+            <div class="card"></div>
+          </div>
+        </div>
+      </div>
+     </section>
+
+
 
     <%- include('./layout/footer'); -%>
 
-  <!-- aos -->
-  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <!-- aos -->
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
 
-<!-- main js -->
-<script type="module" src="../main.js"></script>
+    <!-- main js -->
+    <script type="module" src="../main.js"></script>
   </body>
 </html>

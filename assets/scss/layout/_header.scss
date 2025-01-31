@@ -1,4 +1,39 @@
-.header{
-  background: #69F0AE;
-  font-size: 64px;
+.navbar {
+
+  .navbar-brand{
+    font-size: 24px;
+  }
+
+  .nav-item {
+    padding: 8px 16px;
+
+    &::after {
+      content: '';
+      display: block;
+      width: 0%;
+      border-bottom: 1px solid $light;
+      transition: width 0.5s 0s;
+    }
+
+    &:hover {
+      &::after {
+        width: 100%;
+      }
+    }
+  }
+  .nav-link {
+    color: $light;
+  }
+
+  .contact {
+    &::after {
+      content: '';
+      border-bottom: 0px;
+    }
+    &:hover {
+      .nav-link {
+        color: $dark;
+      }
+    }
+  }
 }
