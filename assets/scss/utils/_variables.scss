@@ -309,6 +309,7 @@ $dark:          #222;//$gray-900 !default;
 $indigo:        #415A90;
 $blue:          #83B8D8;
 $teal:          #69DDDD;
+$gray:          #fafafa;
 
 // scss-docs-end theme-color-variables
 
@@ -324,7 +325,8 @@ $theme-colors: (
   "dark":       $dark,
   "indigo":     $indigo,
   "blue":       $blue,
-  "teal":       $teal
+  "teal":       $teal,
+  "gray":       $gray  
 ) !default;
 // scss-docs-end theme-colors-map
 
@@ -512,7 +514,7 @@ $container-max-widths: (
   md: 720px,
   lg: 960px,
   xl: 1140px,
-  xxl: 1320px
+  xxl: 1440px
 ) !default;
 // scss-docs-end container-max-widths
 
@@ -563,9 +565,9 @@ $border-radius-2xl:           $border-radius-xxl !default; // Deprecated in v5.3
 // fusv-enable
 
 // scss-docs-start box-shadow-variables
-$box-shadow:                  0px 0px 10px 10px rgba(83.70, 128.35, 155.31, 0.20); //0 .5rem 1rem rgba($black, .15) !default;
+$box-shadow:                  0px 4px 12px 0px rgba(0, 0, 0, 0.1); //0 .5rem 1rem rgba($black, .15) !default;
 $box-shadow-sm:               0 .125rem .25rem rgba($black, .075) !default;
-$box-shadow-lg:               0 1rem 3rem rgba($black, .175) !default;
+$box-shadow-lg:               0px 0px 10px 10px rgba(0, 0, 0, 0.1);//0 1rem 3rem rgba($black, .175) !default;
 $box-shadow-inset:            inset 0 1px 2px rgba($black, .075) !default;
 // scss-docs-end box-shadow-variables
 
