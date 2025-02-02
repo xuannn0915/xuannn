@@ -1,0 +1,22 @@
+.care-for-cook{
+
+  .banner-info {
+    background: linear-gradient(
+      90deg,
+      #FEE3C5 25.49%,
+      rgba(254, 227, 197, 0.2) 100%
+    );
+    padding: 120px 0;
+  }
+
+  .img-detail{
+    object-position: left center;
+  }
+
+  .promo-img{
+    border-radius: 15px;
+    &:nth-child(n+2){
+      margin-top: 24px;
+    }
+  }
+}
