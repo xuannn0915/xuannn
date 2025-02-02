@@ -6,21 +6,21 @@ import { glob } from 'glob';
 
 import liveReload from 'vite-plugin-live-reload';
 
-function moveOutputPlugin() {
-  return {
-    name: 'move-output',
-    enforce: 'post',
-    apply: 'build',
-    async generateBundle(options, bundle) {
-      for (const fileName in bundle) {
-        if (fileName.startsWith('pages/')) {
-          const newFileName = fileName.slice('pages/'.length);
-          bundle[fileName].fileName = newFileName;
-        }
-      }
-    },
-  };
-}
+// function moveOutputPlugin() {
+//   return {
+//     name: 'move-output',
+//     enforce: 'post',
+//     apply: 'build',
+//     async generateBundle(options, bundle) {
+//       for (const fileName in bundle) {
+//         if (fileName.startsWith('pages/')) {
+//           const newFileName = fileName.slice('pages/'.length);
+//           bundle[fileName].fileName = newFileName;
+//         }
+//       }
+//     },
+//   };
+// }
 
 export default defineConfig({
   // base 的寫法：
@@ -29,22 +29,35 @@ export default defineConfig({
   plugins: [
     liveReload(['./layout/**/*.ejs', './pages/**/*.ejs', './pages/**/*.html']),
     ViteEjsPlugin(),
-    moveOutputPlugin(),
+    // moveOutputPlugin(),
   ],
   server: {
     // 啟動 server 時預設開啟的頁面
-    open: 'pages/index.html',
+    open: 'index.html',
   },
   build: {
+    // rollupOptions: {
+    //   input: Object.fromEntries(
+    //     glob
+    //       .sync('pages/**/*.html')
+    //       .map((file) => [
+    //         path.relative('pages', file.slice(0, file.length - path.extname(file).length)),
+    //         fileURLToPath(new URL(file, import.meta.url)),
+    //       ])
+    //   ),
+    // },
     rollupOptions: {
-      input: Object.fromEntries(
-        glob
-          .sync('pages/**/*.html')
-          .map((file) => [
-            path.relative('pages', file.slice(0, file.length - path.extname(file).length)),
-            fileURLToPath(new URL(file, import.meta.url)),
-          ])
-      ),
+      input: {
+        main: fileURLToPath(new URL('index.html', import.meta.url)),  // ✅ 確保 index.html 在根目錄
+        ...Object.fromEntries(
+          glob
+            .sync('pages/**/*.html')
+            .map((file) => [
+              path.relative('pages', file.slice(0, file.length - path.extname(file).length)),
+              fileURLToPath(new URL(file, import.meta.url)),
+            ])
+        ),
+      },
     },
     outDir: 'dist',
   },
