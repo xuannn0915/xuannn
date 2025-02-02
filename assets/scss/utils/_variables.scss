@@ -419,11 +419,16 @@ $gradient: linear-gradient(180deg, rgba($white, .15), rgba($white, 0)) !default;
 $spacer: 1rem !default;
 $spacers: (
   0: 0,
-  1: $spacer * .25,
-  2: $spacer * .5,
-  3: $spacer,
-  4: $spacer * 1.5,
-  5: $spacer * 3,
+  1: $spacer * .25, //4
+  2: $spacer * .5, //8
+  3: $spacer, //16
+  4: $spacer * 1.5, //24
+  5: $spacer * 2.5, //40
+  6: $spacer * 3, //48
+  sm: $spacer * 0.75, //12
+  xs: $spacer * 2, //32
+  md: $spacer * 4, //64
+  lg: $spacer * 5, //80
 ) !default;
 // scss-docs-end spacer-variables-maps
 
@@ -639,12 +644,12 @@ $line-height-base:            1.5 !default;
 $line-height-sm:              1.25 !default;
 $line-height-lg:              2 !default;
 
-$h1-font-size:                $font-size-base * 3 !default;
-$h2-font-size:                $font-size-base * 2.25 !default;
-$h3-font-size:                $font-size-base * 1.25 !default;
-$h4-font-size:                $font-size-base * 1.125 !default;
-$h5-font-size:                $font-size-base !default;
-$h6-font-size:                $font-size-base * 0.875 !default;
+$h1-font-size:                $font-size-base * 3 !default; //48
+$h2-font-size:                $font-size-base * 2.25 !default; //36
+$h3-font-size:                $font-size-base * 1.25 !default; //20
+$h4-font-size:                $font-size-base * 1.125 !default; //18
+$h5-font-size:                $font-size-base !default; //16
+$h6-font-size:                $font-size-base * 0.875 !default; //14
 // scss-docs-end font-variables
 
 // scss-docs-start font-sizes
@@ -702,8 +707,8 @@ $blockquote-font-size:        $font-size-base * 1.25 !default;
 $blockquote-footer-color:     $gray-600 !default;
 $blockquote-footer-font-size: $small-font-size !default;
 
-$hr-margin-y:                 $spacer !default;
-$hr-color:                    inherit !default;
+$hr-margin-y:                 80px; //$spacer !default;
+$hr-color:                    #cccccc; //inherit !default;
 
 // fusv-disable
 $hr-bg-color:                 null !default; // Deprecated in v5.2.0
@@ -712,7 +717,7 @@ $hr-height:                   null !default; // Deprecated in v5.2.0
 
 $hr-border-color:             null !default; // Allows for inherited colors
 $hr-border-width:             var(--#{$prefix}border-width) !default;
-$hr-opacity:                  .25 !default;
+$hr-opacity:                  1;//.25 !default;
 
 // scss-docs-start vr-variables
 $vr-border-width:             var(--#{$prefix}border-width) !default;

@@ -16,27 +16,19 @@
     padding: 120px 0;
   }
 
-  .content {
-    &-1 {
-      .feature-img:nth-child(1) {
-        width: 70%;
-      }
-      .feature-img:nth-child(2) {
-        width: 50%;
-        bottom: -24px;
-        left: 8px;
-      }
+  .feature-img-1 {
+    width: 70%;
+  }
+  
+  .feature-img-2 {
+    width: 50%;
+    bottom: -24px;
+    left: 8px;
+  }
 
-      .img-detail {
-        p {
-          width: 28%;
-        }
-      }
-    }
-    &-2 {
-      .feature-desc {
-        margin-bottom: 40px;
-      }
+  .img-detail {
+    p {
+      width: 28%;
     }
   }
 }

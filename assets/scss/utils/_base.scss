@@ -61,28 +61,30 @@ p {
   &-introduction {
     padding: 96px 0;
 
-    .introduction-content {
-      padding-bottom: 64px;
-      margin-bottom: 32px;
-    }
-
-    .overview {
-      margin-bottom: 48px;
+    .duration, .role{
+      width: 50%;
     }
 
     .introduction-video {
       margin-left: -32px;
     }
+
+    @media (max-width:990px) {
+      .introduction-video{
+        margin-left: 0;
+      }
+
+      .overview, .duration, .role {
+        width: 100%;
+      }
+    }
   }
 }
 
-// features challenge
-.feature-content,
-.challenge-content,
-.guideline-content {
-  padding: 80px 0 80px 0;
+// hr margin
+hr {
 
   @media (max-width: 990px) {
-    padding: 64px 0;
+    margin: 64px 0;
   }
 }
