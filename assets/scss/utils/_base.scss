@@ -8,6 +8,7 @@
 body {
   background-color: #fff;
   font-family: Montserrat, Noto Sans TC;
+  cursor: default;
 }
 
 section {
@@ -76,4 +77,48 @@ hr {
   @media (max-width: 990px) {
     margin: 64px 0;
   }
+}
+
+.custom-cursor {
+  position: absolute;
+  width: 64px;
+  height: 64px;
+  background-image: url('/assets/images/cursor.svg'); /* 你的游標圖片 */
+  opacity: 0; /* 預設隱藏 */
+  background-size: contain;
+  pointer-events: none; /* 不影響點擊 */
+  z-index: 9999;
+  transition: transform 0.2s ease-out, opacity 0.2s ease-in-out;
+  transform: translate(-50%, -50%);
+}
+
+// loading
+/* 讓整個網站在 Loading 期間隱藏 */
+.logo-loading {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: $dark;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 9999;
+  opacity: 1;
+  animation: fadeIn 0.5s ease-in-out, fadeOut 0.8s ease-in-out 1.5s forwards;
+}
+
+.logo-loading img {
+  width: 120px; /* 根據需要調整 Logo 大小 */
+  height: auto;
+}
+
+@keyframes fadeIn {
+  0% { opacity: 0; }
+  100% { opacity: 1; }
+}
+
+@keyframes fadeOut {
+  100% { opacity: 0; visibility: hidden; }
 }

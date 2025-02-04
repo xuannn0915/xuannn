@@ -12,15 +12,18 @@
       display: block;
       width: 0%;
       border-bottom: 1px solid $light;
-      transition: width 0.5s 0s;
+      transition: all 0.5s ease-in-out; 
     }
 
     &:hover {
       &::after {
         width: 100%;
+        transition: all 0.5s ease-in-out;
       }
     }
+
   }
+
   .nav-link {
     color: $light;
   }

@@ -147,6 +147,13 @@
         transition: all 0.5s ease-in-out;
         transform: scale(1.1);
       }
+      // cursor: url('/assets/images/cursor.svg') 8 8, auto;
+      // transition: all 1s ease-in-out;
+      .custom-cursor {
+        transform: scale(2); /* 游標變大 */
+        opacity: 1;
+      }
+      cursor: none;
     }
   }
 
