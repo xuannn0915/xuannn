@@ -5,6 +5,14 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <%- include('./layout/head'); -%>
+    <style>
+      /* 頁面剛開始時，強制隱藏內容 */
+      .loading-content {
+        opacity: 0;
+        visibility: hidden;
+        transition: opacity 0.8s ease-in-out;
+      }
+    </style>
   </head>
   <body>
     <div class="logo-loading">
@@ -12,241 +20,244 @@
     </div>
     
     <div class="custom-cursor"></div>
-    
-    <!-- navbar -->
-    <nav class="navbar navbar-expand-lg bg-dark position-fixed w-100">
-    <div class="container">
-      <a class="navbar-brand fw-bold text-light py-3" href="index.html">XUANNN</a>
-      <button class="navbar-toggler text-light" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-        <span class="material-symbols-outlined fs-1">
-          menu
-          </span>
-      </button>
-      <div class="collapse navbar-collapse pt-lg-0 pt-3" id="navbarNav">
-        <ul class="navbar-nav ms-auto fw-medium d-flex align-items-center">
-          <li class="nav-item mb-lg-0 mb-2">
-            <a class="nav-link px-0" href="#work">WORK</a>
-          </li>
-          <li class="nav-item mb-lg-0 mb-3">
-            <a class="nav-link px-0" href="https://drive.google.com/file/d/1lK7QIFvJ0gxID9Doj1znrVCTseflgq6R/view?usp=sharing"  target="_blank" rel="noopener noreferrer">RESUME</a>
-          </li>
-          <li class="nav-item mb-lg-0 mb-3 contact btn btn-outline-light rounded-pill ms-lg-3 ms-0">
-            <a class="nav-link px-0" href="#footer">CONTACT</a>
-          </li>
-        </ul>
-      </div>
-    </div>
-  </nav>
 
-    <!-- Introduction -->
-    <section class="introduction pt-lg">
-      <div class="banner bg-dark">
-        <div class="container">
-          <div class="row position-relative">
-            <div class="col-lg-7">
-              <h2 class="fs-2 text-light">UIUX Designer</h2>
-              <h1 class="fw-bold text-light mb-4">TZU HSUAN CHEN</h1>
-              <div class="moto text-light d-md-flex justify-content-between align-items-center">
-                <p class="fs-lg-5 fs-6">The best designs feel effortless, like a conversation with a friend.</p>
-                <span class="fs-2">#</span>
+    <div class="loading-content bg-light">
+      <!-- navbar -->
+      <nav class="navbar navbar-expand-lg bg-dark position-fixed w-100">
+      <div class="container">
+        <a class="navbar-brand fw-bold text-light py-3" href="index.html">XUANNN</a>
+        <button class="navbar-toggler text-light" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="material-symbols-outlined fs-1">
+            menu
+            </span>
+        </button>
+        <div class="collapse navbar-collapse pt-lg-0 pt-3" id="navbarNav">
+          <ul class="navbar-nav ms-auto fw-medium d-flex align-items-center">
+            <li class="nav-item mb-lg-0 mb-2">
+              <a class="nav-link px-0" href="#work">WORK</a>
+            </li>
+            <li class="nav-item mb-lg-0 mb-3">
+              <a class="nav-link px-0" href="https://drive.google.com/file/d/1lK7QIFvJ0gxID9Doj1znrVCTseflgq6R/view?usp=sharing"  target="_blank" rel="noopener noreferrer">RESUME</a>
+            </li>
+            <li class="nav-item mb-lg-0 mb-3 contact btn btn-outline-light rounded-pill ms-lg-3 ms-0">
+              <a class="nav-link px-0" href="#footer">CONTACT</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+  
+      <!-- Introduction -->
+      <section class="introduction pt-lg">
+        <div class="banner bg-dark">
+          <div class="container">
+            <div class="row position-relative">
+              <div class="col-lg-7">
+                <h2 class="fs-2 text-light">UIUX Designer</h2>
+                <h1 class="fw-bold text-light mb-4">TZU HSUAN CHEN</h1>
+                <div class="moto text-light d-md-flex justify-content-between align-items-center">
+                  <p class="fs-lg-5 fs-6">The best designs feel effortless, like a conversation with a friend.</p>
+                  <span class="fs-2">#</span>
+                </div>
               </div>
-            </div>
-            <div class="col-lg-5 d-lg-block d-none">
-              <div class="avatar-box rounded-pill overflow-hidden">
-                <img src="./assets/images/avatar.jpg" alt="avatar">
+              <div class="col-lg-5 d-lg-block d-none">
+                <div class="avatar-box rounded-pill overflow-hidden">
+                  <img src="./assets/images/avatar.jpg" alt="avatar">
+                </div>
               </div>
             </div>
           </div>
         </div>
-      </div>
-      <div class="info">
-        <div class="container">
-          <div class="row flex-lg-row flex-column-reverse justify-content-between">
-            <div class="col-lg-7">
-              <p class="mb-4">
-                我是子瑄，<br>
-                畢業於台師大設計系產品組，於醫美公司從事UIUX設計師已有三年的經歷。主導超過10種不同類型專案，涵蓋品牌官網、活動網站、後台系統等類別，擅長電商平台、RWD響應式網頁與後台管理系統介面設計。
-              </p>
-              <p>
-                具備基礎前端開發能力，持續精進網頁開發技術。現正專研 Webflow 等 no-code 工具，致力拓展跨域專業，以提供更全方位的專案開發解決方案。
-              </p>
-              <div class="scroll_down text-lg-start text-center">
-                <p class="text-primary fw-bold mb-3">SCROLL</p>
-                <img src="./assets/images/scroll down.svg" alt="scroll down arrow" class="arrow">
+        <div class="info">
+          <div class="container">
+            <div class="row flex-lg-row flex-column-reverse justify-content-between">
+              <div class="col-lg-7">
+                <p class="mb-4">
+                  我是子瑄，<br>
+                  畢業於台師大設計系產品組，於醫美公司從事UIUX設計師已有三年的經歷。主導超過10種不同類型專案，涵蓋品牌官網、活動網站、後台系統等類別，擅長電商平台、RWD響應式網頁與後台管理系統介面設計。
+                </p>
+                <p>
+                  具備基礎前端開發能力，持續精進網頁開發技術。現正專研 Webflow 等 no-code 工具，致力拓展跨域專業，以提供更全方位的專案開發解決方案。
+                </p>
+                <div class="scroll_down text-lg-start text-center">
+                  <p class="text-primary fw-bold mb-3">SCROLL</p>
+                  <img src="./assets/images/scroll down.svg" alt="scroll down arrow" class="arrow">
+                </div>
               </div>
-            </div>
-            <div class="col-lg-4 d-lg-none d-block">
-                <img src="./assets/images/avatar.jpg" alt="avatar" class="mb-lg-0 mb-4 avatar">
+              <div class="col-lg-4 d-lg-none d-block">
+                  <img src="./assets/images/avatar.jpg" alt="avatar" class="mb-lg-0 mb-4 avatar">
+              </div>
             </div>
           </div>
         </div>
-      </div>
-    </section>
-
-
-    <!-- Project -->
-    <section class="project" id="work">
-    <div class="container">
-      <div class="section-title text-center">
-        <div class="fs-lg-4 text-primary">PROJECTS</div>
-        <div class="fs-2 fw-bold text-dark">專案作品</div>
-      </div>
-      <div class="row justify-content-center gy-4 project-list">
-        <div class="col-xl-6 list-item">
-          <a href="./pages/Preventive Healthcare.html" class="card project-card position-relative overflow-hidden">
-            <div class="card-content text-light p-4 d-flex flex-column justify-content-between z-1">
-              <div class="card-content-top">
-                <div class="fw-bold card-title lh-sm">CONSULTING WEBSITE</div>
-                <p>超預防醫學·2023</p>
-              </div>
-              <ul class="card-content-bottom d-lg-flex fs-6 ">
-                <li class="me-lg-3 mb-lg-0 mb-2"># 後台系統設計</li>
-                <li># 線上預約平台</li>
-              </ul>
-            </div>
-            <img src="./assets/images/Home/超預防首頁.jpg" alt="" class="position-absolute top-0 start-0">
-          </a>
-        </div>
-        <div class="col-xl-6 list-item">
-          <a href="./pages/Cloud Miner Technology.html" class="card project-card position-relative overflow-hidden">
-            <div class="card-content text-light p-4 d-flex flex-column justify-content-between z-1">
-              <div class="card-content-top">
-                <div class="fw-bold card-title lh-sm"> TRADING PLATFORM</div>
-                <p>雲端礦機·2024</p>
-              </div>
-              <ul class="card-content-bottom d-lg-flex fs-6">
-                <li class="me-lg-3 mb-lg-0 mb-2"># 線上交易平台</li>
-                <li># 數據介面設計</li>
-              </ul>
-            </div>
-            <img src="./assets/images/Home/雲礦機首頁.jpg" alt="" class="position-absolute top-0 start-0">
-          </a>
-        </div>
-        <div class="col-xl-6 list-item">
-          <a href="./pages/Care For Cook.html" class="card project-card position-relative overflow-hidden">
-            <div class="card-content text-dark p-4 d-flex flex-column justify-content-between z-1">
-              <div class="card-content-top">
-                <div class="fw-bold card-title lh-sm">E-COMMERCE WEBSITE</div>
-                <p>照料理·2020</p>
-              </div>
-              <ul class="card-content-bottom d-lg-flex fs-6">
-                <li class="me-lg-3 mb-lg-0 mb-2"># 電子商務平台</li>
-                <li># 品牌網站設計</li>
-              </ul>
-            </div>
-            <img src="./assets/images/Home/照料理首頁.jpg" alt="" class="position-absolute top-0 start-0">
-          </a>
-        </div>
-        <div class="col-xl-6 list-item">
-          <a href="./pages/MISC Projects.html" class="card project-card position-relative overflow-hidden">
-            <div class="card-content text-light p-4 d-flex flex-column justify-content-between z-1">
-              <div class="card-content-top">
-                <div class="fw-bold card-title lh-sm">MISC PROJECT</div>
-                <p>各式專案</p>
-              </div>
-              <ul class="card-content-bottom d-lg-flex fs-6">
-                <li class="me-lg-3 mb-lg-0 mb-2"># 品牌官網</li>
-                <li class="me-lg-3 mb-lg-0 mb-2"># APP設計</li>
-                <li># 活動網站</li>
-              </ul>
-            </div>
-            <img src="./assets/images/Home/其他專案首頁.jpg" alt="" class="position-absolute top-0 start-0">
-          </a>
-        </div>
-      </div>
-    </div>
-    </section>
-
-
-    <!-- Side Project -->
-    <section class="side-project bg-gray">
-      <div class="container text-center">
+      </section>
+  
+  
+      <!-- Project -->
+      <section class="project" id="work">
+      <div class="container">
         <div class="section-title text-center">
-          <div class="fs-lg-4 text-primary">SIDE-PROJECTS</div>
-          <div class="fs-2 fw-bold text-dark mb-4">自主創作</div>
-          <p>在工作之餘的自主進修，分享一些互動設計與平面設計</p>
+          <div class="fs-lg-4 text-primary">PROJECTS</div>
+          <div class="fs-2 fw-bold text-dark">專案作品</div>
         </div>
-        <div class="row justify-content-between gx-3 gy-5 side-project-list">
-          <div class="col-lg-4 col-md-6 list-item">
-            <div class="card overflow-hidden mb-3">
-              <video src="./assets/images/Home/glowing cube.mov" class="h-100 object-fit-cover" autoplay loop></video>
-            </div>
-            <div class="item-info text-start">
-              <p class="fs-6 mb-1">html/css/javascript</p>
-              <div class="item-title fw-bold text-dark fs-4">
-                Glowing Cube Hover Effect
+        <div class="row justify-content-center gy-4 project-list">
+          <div class="col-xl-6 list-item">
+            <a href="./pages/Preventive Healthcare.html" class="card project-card position-relative overflow-hidden">
+              <div class="card-content text-light p-4 d-flex flex-column justify-content-between z-1">
+                <div class="card-content-top">
+                  <div class="fw-bold card-title lh-sm">CONSULTING WEBSITE</div>
+                  <p>超預防醫學·2023</p>
+                </div>
+                <ul class="card-content-bottom d-lg-flex fs-6 ">
+                  <li class="me-lg-3 mb-lg-0 mb-2"># 後台系統設計</li>
+                  <li># 線上預約平台</li>
+                </ul>
               </div>
-            </div>
+              <img src="./assets/images/Home/超預防首頁.jpg" alt="" class="position-absolute top-0 start-0">
+            </a>
           </div>
-          <div class="col-lg-4 col-md-6 list-item">
-            <div class="card overflow-hidden mb-3">
-              <video src="./assets/images/Home/switch toggler.mov" class="h-100 object-fit-cover" autoplay loop></video>
-            </div>
-            <div class="item-info text-start">
-              <p class="fs-6 mb-1">html/css/javascript</p>
-              <div class="item-title fw-bold text-dark fs-4">
-                Color Toggle Button
+          <div class="col-xl-6 list-item">
+            <a href="./pages/Cloud Miner Technology.html" class="card project-card position-relative overflow-hidden">
+              <div class="card-content text-light p-4 d-flex flex-column justify-content-between z-1">
+                <div class="card-content-top">
+                  <div class="fw-bold card-title lh-sm"> TRADING PLATFORM</div>
+                  <p>雲端礦機·2024</p>
+                </div>
+                <ul class="card-content-bottom d-lg-flex fs-6">
+                  <li class="me-lg-3 mb-lg-0 mb-2"># 線上交易平台</li>
+                  <li># 數據介面設計</li>
+                </ul>
               </div>
-            </div>
+              <img src="./assets/images/Home/雲礦機首頁.jpg" alt="" class="position-absolute top-0 start-0">
+            </a>
           </div>
-          <div class="col-lg-4 col-md-6 list-item">
-            <div class="card overflow-hidden mb-3">
-              <video src="./assets/images/Home/tilt card.mov" class="h-100 object-fit-cover" autoplay loop></video>
-            </div>
-            <div class="item-info text-start">
-              <p class="fs-6 mb-1">html/css/javascript</p>
-              <div class="item-title fw-bold text-dark fs-4">
-                Glassmorphism Card With Tilt Effect
+          <div class="col-xl-6 list-item">
+            <a href="./pages/Care For Cook.html" class="card project-card position-relative overflow-hidden">
+              <div class="card-content text-dark p-4 d-flex flex-column justify-content-between z-1">
+                <div class="card-content-top">
+                  <div class="fw-bold card-title lh-sm">E-COMMERCE WEBSITE</div>
+                  <p>照料理·2020</p>
+                </div>
+                <ul class="card-content-bottom d-lg-flex fs-6">
+                  <li class="me-lg-3 mb-lg-0 mb-2"># 電子商務平台</li>
+                  <li># 品牌網站設計</li>
+                </ul>
               </div>
-            </div>
+              <img src="./assets/images/Home/照料理首頁.jpg" alt="" class="position-absolute top-0 start-0">
+            </a>
           </div>
-          <div class="col-lg-4 col-md-6 list-item">
-            <div class="card overflow-hidden mb-3">
-              <img src="./assets/images/Home/Calendar.jpg" alt="">
-            </div>
-            <div class="item-info text-start">
-              <p class="fs-6 mb-1">Illustrator</p>
-              <div class="item-title fw-bold text-dark fs-4">
-                Calendar Design
+          <div class="col-xl-6 list-item">
+            <a href="./pages/MISC Projects.html" class="card project-card position-relative overflow-hidden">
+              <div class="card-content text-light p-4 d-flex flex-column justify-content-between z-1">
+                <div class="card-content-top">
+                  <div class="fw-bold card-title lh-sm">MISC PROJECT</div>
+                  <p>各式專案</p>
+                </div>
+                <ul class="card-content-bottom d-lg-flex fs-6">
+                  <li class="me-lg-3 mb-lg-0 mb-2"># 品牌官網</li>
+                  <li class="me-lg-3 mb-lg-0 mb-2"># APP設計</li>
+                  <li># 活動網站</li>
+                </ul>
               </div>
-            </div>
+              <img src="./assets/images/Home/其他專案首頁.jpg" alt="" class="position-absolute top-0 start-0">
+            </a>
           </div>
-          <div class="col-lg-4 col-md-6 list-item">
-            <div class="card overflow-hidden mb-3">
-              <img src="./assets/images/Home/Pet banner.jpg" alt="" class="h-100 object-fit-cover">
-            </div>
-            <div class="item-info text-start">
-              <p class="fs-6 mb-1">Illustrator / Photoshop</p>
-              <div class="item-title fw-bold text-dark fs-4">
-                Pet Food Advertising Billboard
-              </div>
-            </div>
-          </div>
-          <div class="col-lg-4 col-md-6 list-item">
-            <div class="card overflow-hidden mb-3">
-              <img src="./assets/images/Home/Poster.jpg" alt="">
-            </div>
-            <div class="item-info text-start">
-              <p class="fs-6 mb-1">Illustrator</p>
-              <div class="item-title fw-bold text-dark fs-4">
-                Youth Camp Poster Design
-              </div>
-            </div>
-          </div>
-
         </div>
-        <a href="https://www.pinterest.com/xuannn0915/_created/" class="btn btn-outline-primary rounded-pill fw-bold d-inline-flex align-items-center" target="_blank">
-          MORE ON PINTEREST
-          <div class="arrow-right ms-3 pb-1 position-relative">
-            <img src="./assets/images/arrow_right.svg" alt="arrow right" class="arrow">
-            <img src="./assets/images/arrow_right_hover.svg" alt="arrow right hover" class="arrow-hover position-absolute top-50 start-0 translate-middle-y">
-          </div>
-        </a>
       </div>
-    </section>
-
-
-    <%- include('./layout/footer'); -%>
+      </section>
+  
+  
+      <!-- Side Project -->
+      <section class="side-project bg-gray">
+        <div class="container text-center">
+          <div class="section-title text-center">
+            <div class="fs-lg-4 text-primary">SIDE-PROJECTS</div>
+            <div class="fs-2 fw-bold text-dark mb-4">自主創作</div>
+            <p>在工作之餘的自主進修，分享一些互動設計與平面設計</p>
+          </div>
+          <div class="row justify-content-between gx-3 gy-5 side-project-list">
+            <div class="col-lg-4 col-md-6 list-item">
+              <div class="card overflow-hidden mb-3">
+                <video src="./assets/images/Home/glowing cube.mov" class="h-100 object-fit-cover" autoplay loop></video>
+              </div>
+              <div class="item-info text-start">
+                <p class="fs-6 mb-1">html/css/javascript</p>
+                <div class="item-title fw-bold text-dark fs-4">
+                  Glowing Cube Hover Effect
+                </div>
+              </div>
+            </div>
+            <div class="col-lg-4 col-md-6 list-item">
+              <div class="card overflow-hidden mb-3">
+                <video src="./assets/images/Home/switch toggler.mov" class="h-100 object-fit-cover" autoplay loop></video>
+              </div>
+              <div class="item-info text-start">
+                <p class="fs-6 mb-1">html/css/javascript</p>
+                <div class="item-title fw-bold text-dark fs-4">
+                  Color Toggle Button
+                </div>
+              </div>
+            </div>
+            <div class="col-lg-4 col-md-6 list-item">
+              <div class="card overflow-hidden mb-3">
+                <video src="./assets/images/Home/tilt card.mov" class="h-100 object-fit-cover" autoplay loop></video>
+              </div>
+              <div class="item-info text-start">
+                <p class="fs-6 mb-1">html/css/javascript</p>
+                <div class="item-title fw-bold text-dark fs-4">
+                  Glassmorphism Card With Tilt Effect
+                </div>
+              </div>
+            </div>
+            <div class="col-lg-4 col-md-6 list-item">
+              <div class="card overflow-hidden mb-3">
+                <img src="./assets/images/Home/Calendar.jpg" alt="">
+              </div>
+              <div class="item-info text-start">
+                <p class="fs-6 mb-1">Illustrator</p>
+                <div class="item-title fw-bold text-dark fs-4">
+                  Calendar Design
+                </div>
+              </div>
+            </div>
+            <div class="col-lg-4 col-md-6 list-item">
+              <div class="card overflow-hidden mb-3">
+                <img src="./assets/images/Home/Pet banner.jpg" alt="" class="h-100 object-fit-cover">
+              </div>
+              <div class="item-info text-start">
+                <p class="fs-6 mb-1">Illustrator / Photoshop</p>
+                <div class="item-title fw-bold text-dark fs-4">
+                  Pet Food Advertising Billboard
+                </div>
+              </div>
+            </div>
+            <div class="col-lg-4 col-md-6 list-item">
+              <div class="card overflow-hidden mb-3">
+                <img src="./assets/images/Home/Poster.jpg" alt="">
+              </div>
+              <div class="item-info text-start">
+                <p class="fs-6 mb-1">Illustrator</p>
+                <div class="item-title fw-bold text-dark fs-4">
+                  Youth Camp Poster Design
+                </div>
+              </div>
+            </div>
+  
+          </div>
+          <a href="https://www.pinterest.com/xuannn0915/_created/" class="btn btn-outline-primary rounded-pill fw-bold d-inline-flex align-items-center" target="_blank">
+            MORE ON PINTEREST
+            <div class="arrow-right ms-3 pb-1 position-relative">
+              <img src="./assets/images/arrow_right.svg" alt="arrow right" class="arrow">
+              <img src="./assets/images/arrow_right_hover.svg" alt="arrow right hover" class="arrow-hover position-absolute top-50 start-0 translate-middle-y">
+            </div>
+          </a>
+        </div>
+      </section>
+  
+  
+      <%- include('./layout/footer'); -%>
+    </div>
+    
 
     <!-- aos -->
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
